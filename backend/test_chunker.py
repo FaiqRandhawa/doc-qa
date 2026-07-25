@@ -1,6 +1,6 @@
 from chunker import extract_text, clean_text, chunk_text, process_pdf
 
-PDF_PATH = "sample.pdf"  # change to your actual PDF path
+PDF_PATH = "/home/faiq-randhawa/university/DB Semester Project Deliverables Instructions.pdf"  # change to your actual PDF path
 
 # step 1: raw extraction
 raw = extract_text(PDF_PATH)
