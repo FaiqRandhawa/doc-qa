@@ -1,0 +1,20 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Node (for frontend later)
+node_modules/
+dist/
+.vite/
+
+# OS
+.DS_Store
+
+# PDFs used for local testing (don't commit test data)
+*.pdf
+
+# ChromaDB persistent storage (later)
+chroma_db/
