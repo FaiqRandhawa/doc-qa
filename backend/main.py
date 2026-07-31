@@ -4,8 +4,18 @@ from sentence_transformers import SentenceTransformer
 from chunker import process_pdf
 import shutil
 import os
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 print("Loading embedding model...")
 model = SentenceTransformer('all-MiniLM-L6-v2')
